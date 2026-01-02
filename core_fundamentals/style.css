@@ -1,0 +1,31 @@
+*{
+    background-color:lightblue;
+
+}
+
+p{
+    color: blue;
+    text-align: center;
+}
+
+#bb{
+    color: red;
+    text-shadow: 12px 12px 8px #888888;
+}
+
+.two{
+    font-size: 20px;
+    background-color: wheat;
+    color: yellow;
+}
+
+h1{
+    width:500px;
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 12px 12px 8px green;
+    text-shadow: 12px 12px 8px red;
+    border: 2px solid red;
+    text-align: center;
+    color: white;
+}
