@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Trirong|Audiowide">
+    <title>FONT styling</title>
+    <style>
+        div p{
+            font-family: "Audiowide";
+        }
+        div div{
+            font-family: "Trirong";
+        }
+        div{
+            font-family:"Sofia";
+        }
+
+        @font-face {
+            font-family:"myfont";
+            src: url('font/myfont.woff2') format('woff2'),
+                 url('font//myfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        .hello{
+            font-family: "myfont";
+        }
+    </style>
+</head>
+<body>
+        <p>Check out this Font</p>
+        <div>
+            <p>Check out this Font</p>
+        </div>
+
+        <div>
+            <div>Check out this Font</div>
+        </div>
+                <div>Check out this Font</div>
+
+        <div class="hello">
+            hello custom font</div>
+    
+    
+</body>
+</html>
