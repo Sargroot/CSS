@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        .a {
+            width :250px;
+            height :250px;
+            border: 5px solid black;
+            padding: 30px;
+            margin: 50px ;
+            background-color: lightsalmon;
+            
+            
+        }
+        #aa {
+           
+            border: 5px solid green;
+            padding: 30px;
+            margin: 50px ;
+            background-color: lightsalmon;
+            
+            
+        }
+        .b { 
+            border: 6px dashed blue;  
+            display: flex;   
+            
+        }
+        p {
+            border: 2px solid red;
+        }
+        span {
+            border: 5px dotted yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>BOX MODEL EXAMPLE</h1>
+    <div class="b">
+    <div class="a" id="aa" style="border: 5px solid yellow;">
+        <p>this div is a box</p>
+        <br>
+        <p>this div is a box</p><p><span>this div is a box</span></p><p>this div is a box</p><p>this div is a box</p><p>this div is a box</p>
+    </div>
+    <div class="a">
+        <p>this div is a box</p>
+        <br>
+        <p>this div is a box</p><p><span>this div is a <span >box</span></span></p><p>this div is a box</p><p>this div is a box</p><p>this div is a box</p>
+    </div>
+    <div class="a">
+        <p>this div is a box</p>
+        <br>
+        <p>this div is a box</p><p>this div is a box</p><p>this div is a box</p><p>this div is a box</p><p>this div is a box</p>
+    </div>
+
+  
+</div>
+</body>
+</html>
