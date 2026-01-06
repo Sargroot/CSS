@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX-ITEM</title>
+    <style>
+        .box{
+            display: flex;
+            flex-direction: row;
+            background-color: blue;
+        }
+        .box div{
+            background-color: aqua;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div style="flex-grow: 3;">one</div>
+        <div>two</div>
+        <div>three</div>
+    </div>
+    <br><br>
+        <div class="box">
+        <div style="order: 3;">one</div>
+        <div style="order: 1;">two</div>
+        <div style="order: 2;">three</div>
+    </div>
+    <br><br>
+            <div class="box">
+        <div >one</div>
+        <div style="flex-shrink: 3;">two</div>
+        <div>three</div>
+    </div>
+    <br><br>
+            <div class="box">
+        <div >one</div>
+        <div style="flex-basis: 100px;">two</div>
+        <div>three</div>
+    </div>
+    <br><br>
+            <div class="box">
+        <div >one</div>
+        <div style="align-self: center;">two</div>
+        <div>three</div>
+    </div>
+    <br><br>
+            <div class="box">
+        <div style="align-self: flex-start;">one</div>
+        <div>two</div>
+        <div style="align-self: flex-end;">three</div>
+    </div>
+    <br><br>
+            <div class="box">
+        <div >one</div>
+        <div>two</div>
+        <div style="flex: 0 0 150px;">three</div>
+    </div>
+    <br><br>
+</body>
+</html>

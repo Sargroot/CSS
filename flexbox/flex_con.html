@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        
+        .box{
+            height: 200px;
+            display: flex;
+            background-color: blue;
+            flex-direction: row;
+            flex-wrap:  wrap;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center ;
+            margin: 20px;
+        }
+        .box1{
+            height: 200px;
+            margin: 20px;
+            display: flex;
+            background-color: blue;
+            flex-flow:row wrap-reverse;
+            align-items: start;
+
+         
+        }
+        .box2{
+            height: auto;
+            margin: 20px;
+            display: inline-flex;
+            background-color: blueviolet;
+            flex-flow: column wrap;
+        }
+        span{
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            width:50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>Hello1</span>
+        <span>Hello2</span>
+        <span>Hello3</span>
+        <span>Hello2</span>
+        <span>Hello3</span>        
+        <span>Hello2</span>
+        <span>Hello3</span>
+    </div>
+
+        <div class="box1">
+        <span>Hello1</span>
+        <span>Hello2</span>
+        <span>Hello3</span>
+        <span>Hello2</span>
+         <span>Hello1</span>
+        <span>Hello2</span>
+        <span>Hello3</span>
+    </div>
+
+        <div class="box2">
+        <span>Hello1</span>
+        <span>Hello2</span>
+        <span>Hello3</span>
+        <span>Hello2</span>
+         <span>Hello1</span>
+        <span>Hello2</span>
+        <span>Hello3</span>
+    </div>
+    
+</body>
+</html>

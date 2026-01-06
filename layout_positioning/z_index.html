@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-INDEX</title>
+    <style>
+        .box{
+            height: 150px;
+            width:150px;
+            position: fixed;
+            margin: 15px;
+        }
+        .blue{
+            background-color: blue;
+            z-index: 1;
+            top:10px;
+            left: 10px;
+        }
+        .red{
+            background-color: red;
+            z-index: 3;
+            top:20px;
+            left: 20px;
+        }
+        .green{
+            background-color: green;
+            z-index: 2;
+            top: 30px;
+            left: 30px;
+        }
+        .check{
+            background-color: orchid;
+            z-index:4;
+            top: 40px;
+            left: 40px;
+        }
+        .check1{
+            background-color: yellow;
+            z-index:500;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box blue" >WELCOME</div>
+    <div class="box red" >WELCOME</div>
+    <div class="box green">WELCOME</div>
+    <br><br>
+    <div class="box check" >WELCOME<br>
+        <span class="box check1" >Hello</span>
+    </div>
+<h1>WELCOME</h1><br>
+<h1>WELCOME</h1><br>
+<h1>WELCOME</h1><br>
+<h1>WELCOME</h1><br>
+
+
+</body>
+</html>
