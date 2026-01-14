@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover and more</title>
+<style>
+    p{
+        color: blue;
+    }
+    p:hover{
+        height: 50px;
+        width: 170px;
+        border: 2px solid yellow;
+        border-radius: 12px;
+        color: red;
+        background-color: yellowgreen;
+        box-shadow: 5px 5px 15px yellow,-5px -5px 15px yellow;
+    }
+    input:focus{
+        background-color: lawngreen;
+        color: white;
+    }
+    button:focus{
+        background-color: green;
+        color: white;
+    }
+    a:active{
+        background-color: red;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1> PSEUDO_CLASSES</h1>
+    <h2>HOVER</h2><br>
+    <p>This is a Hover example</p>
+    <br><br>
+
+    <h2>FOCUS</h2>
+    <div>This is a Focus example</div>
+    <form>
+        <label for="name">ENTER YOUR NAME : </label><br>
+        <input type="text" name="name" pattern="[a-z]{0-9}" placeholder="eg:Saravanane" required>
+        <button type="submit">SUBMIT</button>
+    </form><br><br>
+
+    <h2>ACTIVE</h2>
+    <div>This is a Active Example</div>
+    <a href="style1.html">Click for new page</a>
+    <br><br>
+</body>
+</html>
