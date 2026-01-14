@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITION</title>
+<style>
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+    }
+    .box{
+        transition: height 3s , width 3s;
+        transition-delay: 2s;
+    }
+    .box:hover{
+        height: 300px;
+        width:300px;
+
+    }
+    .a{
+        transition-timing-function: ease-out;
+        transition: width 5s;
+    }
+    .a:hover{
+        width: 500px;
+    }
+    button{
+        background-color: green;
+        color: white;
+        transition: background-color 8s ease-out , transform 8s ease-out ;
+    }
+    button:hover{
+        background-color: violet;
+        transform: scale(5.5);
+        
+    }
+</style>
+</head>
+<body>
+
+    <div class="box"></div><br>
+    <div class="a"></div><br>
+
+    <button>Hello</button>
+</body>
+</html>

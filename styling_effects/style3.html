@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO_ELEMENT</title>
+<style>
+    p::first-line{
+        color: green;
+    }
+    div p::first-letter{
+        color: yellow;
+    }
+    .a::before{
+        content: url(bg.png);
+    }
+    .b::after{
+        content:'☑️';
+    }
+    ::marker{
+        background-color: violet;
+        color: gold;
+    }
+    ::selection{
+        color: chartreuse;
+        background-color:palevioletred ;
+        
+    }
+</style>
+</head>
+<body>
+    <P>This is a p tag which first line is in different color and This is a p tag which first line is in different color and This is a p tag which first line is in different color and more</P>
+    <div><P>This is a p tag which first Letter is in different color and Letter is a p tag which first Letter is in different color and This is a p tag which first Letter is in different color and more</P></div>
+    <div class="a">
+        HI this is befoure
+    </div>
+    <div class="b">
+        HI this is after
+    </div>
+    <div>
+        <ul style="list-style-type: square;">
+            <li>one</li>
+            <li>two</li>
+        </ul>
+    </div>
+    <div>
+        This is a example for selection element
+    </div>
+</body>
+</html>
