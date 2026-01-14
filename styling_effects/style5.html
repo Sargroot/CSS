@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>KEY FRAME</title>
 </head>
-<body>
+<style>
+div{
+    height: 100px;
+    width:100px;
+    background-color: yellow;
+    position: relative;
+    animation:mymove 5s infinite;
+}
+
+@keyframes mymove{
+    from{
+        top:0px;
+    }
+    75%{
+        background-color: aqua;
+    }
+    to{
+        top:500px;
+    }
+}
+p{
+    height:100px;
+    width:150px;
+    background-color: yellow;
+    position: relative;
+    border: 2px solid gray;
+    animation: hello 5s infinite;
+}
+@keyframes hello {
+    0%{top:0px;}
+    25%{top:150px;}
+    50%{top:250px;}
+    75%{top:100px;}
+    100%{top:0px;}
     
+}
+
+img{
+    height: 200px;
+    width:200px;
+    transition: height 5s , width 5s , transform 15s;
+}
+
+
+img:hover {
+    height: 500px;
+    width:500px ;
+    transform : rotate(5000deg);
+    
+}
+
+</style>
+<body>
+    <div></div>
+
+    <p>one</p>
+
+    <img src="bg.png"></img>
 </body>
 </html>
