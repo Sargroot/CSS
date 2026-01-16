@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNITS in CSS</title>
+<style>
+    .f{
+        font-size: 50%;
+    }
+    .ff{
+        font-size: 150%;
+    }
+    div{
+        border: 2px solid black;
+        margin:20px;
+        padding: 20px;
+    }
+    .f1{
+        font-size: 0.5rem;
+    }
+    .ff1{
+        font-size: 1.5rem;
+    }
+    .f2{
+        font-size: 0.5vh;
+    }
+    .ff2{
+        font-size: 10vh;
+    }
+    .f3{
+        font-size: 0.5vw;
+    }
+    .ff3{
+        font-size: 10vw;
+    }
+    .f4{
+        width: 50%;
+    }
+    .ff4{
+        width: 100%;
+    }
+    .grd{
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+</style>
+</head>
+<body>
+    <section class="grd" >
+    <div>
+        <h1>UNITS : %, rem, vh, vw, fr</h1>
+    </div>
+    <div>
+        <h2>UNITS:%</h2>
+        <p class="f">welcome</p>
+         <p>welcome</p>
+        <p class="ff"> welcome </p>
+    </div>
+    <div>
+        <h2>UNITS:rem</h2>
+        <p class="f1">welcome</p>
+         <p>welcome</p>
+        <p class="ff1"> welcome </p>
+    </div>
+    <div>
+        <h2>UNITS:vh</h2>
+        <p class="f2">welcome</p>
+         <p>welcome</p>
+        <p class="ff2"> welcome </p>
+    </div>
+    <div>
+        <h2>UNITS:vw</h2>
+        <p class="f3">welcome</p>
+         <p>welcome</p>
+        <p class="ff3"> welcome </p>
+    </div>
+    <div>
+        <h2>UNITS:vw</h2>
+        <p class="f4 grd">welcome</p>
+         <p>welcome</p>
+        <p class="ff4 grd"> welcome </p>
+    </div>
+    </section>
+</body>
+</html>
