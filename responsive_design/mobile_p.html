@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile first principle</title>
+
+<style>
+    .body{
+        background-color: aquamarine;
+    }
+    .eve{
+        background-color: blue;
+        color: white;
+        
+    }
+    .see{
+        display: grid;
+        grid-template-columns: repeat(3,1fr) ;
+        gap: 2em;
+    }
+    button{
+        width: 340px;
+        background-color: yellow;
+        border-radius: 12px;
+    }
+    @media (max-width:750px) {
+        .see{
+            grid-template-columns: repeat(2,1fr);
+        }
+         button{
+            width: 150px;
+            background-color: red;
+            color: white;
+            border-radius: 12px;
+
+
+        }
+        
+    }
+    @media (max-width:500px) {
+        .see{
+            grid-template-columns: repeat(1,1fr);
+        }
+        button{
+            width: 90px;
+            background-color: green;
+            color: white;
+            border-radius: 12px;
+
+        }
+        
+    }
+    @media (max-height:100px) {
+        body{
+            background-color: brown;
+        }
+        
+    }
+    @media (min-height:250px) {
+        body{
+            background-color: green;
+        }
+        
+    }
+    
+</style>
+</head>
+<body>
+    <div class="header"><h2>MOBILE RESPONSIVE</h2></div>
+    <section class="see">
+        <div class="eve">
+            <h3>EVENT 1</h3><br>
+            <p>This is a event</p>
+            <button>REGISTER</button>
+        </div>
+        <div class="eve">
+            <h3>EVENT 2</h3><br>
+            <p>This is a event</p>
+            <button>REGISTER</button>
+        </div>
+        <div class="eve">
+            <h3>EVENT 3</h3><br>
+            <p>This is a event</p>
+            <button>REGISTER</button>
+        </div>
+    </section>
+</body>
+</html>

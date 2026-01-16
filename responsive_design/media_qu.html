@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+<style>
+    body{
+        background-color: aqua;
+    }
+    button:hover{
+        background-color: red;
+    }
+    @media screen and (max-height:250px){
+        body{
+            background-color: yellow;
+        }
+    }
+
+    @media  screen and (max-width:500px) {
+        body{
+            background-color: orange;
+        }
+    }
+    @media screen and (min-height:300px) {
+        button:hover{
+            background-color: greenyellow;
+        }
+        body{
+            background-color: violet;
+        }
+    }
+</style>
+</head>
+<body>
+    <div><h1>This is a header</h1></div>
+    <div>
+        <p>This is a media querry example</p>
+        <button>Hello</button>
+    </div>
+</body>
+</html>
