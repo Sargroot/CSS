@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT - *</title>
+<style>
+    div{
+        height: 250px;
+        width: 350px;
+        border:3px solid yellow;
+        margin: 25px;
+    }
+    div .im{
+        height: 50%;
+        width:100%;
+        object-fit: contain;
+    }
+    .im{
+        object-position: 100% 10%;
+    }
+    .a{
+        aspect-ratio: 2/4;
+    }
+</style>
+</head>
+<body>
+<div>
+    <img  class="im" style="aspect-ratio: 16/9;" src="/responsive_design/im1.jpg" alt="hello">
+    </div>
+
+<div>
+    <img class="im" src="/responsive_design/bg.png" alt="hello">
+</div>
+
+<section  > 
+    <img class="a" src="/responsive_design/im10.jpg" alt="data">
+</section>
+</body>
+</html>

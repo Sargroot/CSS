@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+<style>
+    :root{
+        --color1:red;
+        --color2:blue;
+        --color3:green;
+    }
+    header h1{
+        background-color:var(--color1);
+    }
+    article {
+        background-color: var(--color2);
+    }
+    footer p{
+        --color3:yellow;
+        background-color: var(--color3);
+    }
+    .f{
+        --font:12px;
+        font-size: var(--font);
+        background-color: var(--color3);
+    }
+    section p{
+        --color4:violet;
+        background-color: var(--color4);
+        display: inline;
+    }
+    @media screen and (max-height:450px) {
+        body{
+            background-color: var(--color1);
+        }
+        
+    }
+    @media screen and (min-width:500px){
+        .f{
+            --font:50px;
+        }
+    }
+    
+</style>
+</head>
+<body>
+<header>
+    <h1>CSS Variables</h1>
+</header>
+<article>
+    <p>This is under main tag</p>
+    <section>
+        <p>This is a p tag under section</p>
+    </section>
+</article>
+<p class="f">Hello this is  a Font</p>
+<footer>
+    <p>This is  under footer</p>
+</footer>
+</body>
+</html>
