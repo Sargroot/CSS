@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEME change</title>
+<style>
+    :root{
+        --bg_color:white;
+        --text_color:black;
+    }
+    @media (prefers-color-scheme: light)  and (min-width:500px){
+        :root{
+        --bg_color:black;
+        --text_color:white;            
+        }
+        
+    }
+    body{
+        color: var(--text_color);
+        background-color: var(--bg_color);
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>CHANGE THEME</h1>
+    </header>
+    <p>This theme can be changed by resizing</p>
+    <p>This theme can be changed by resizing</p>
+    <p>This theme can be changed by resizing</p>
+    
+</body>
+</html>
