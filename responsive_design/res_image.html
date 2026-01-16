@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE IMAGE</title>
+<style>
+    img{
+        max-inline-size: 100%;
+    }
+</style>
+</head>
+<body>
+<img 
+    srcset="bg.png 500w"
+    sizes="(max-width: 500px) 100vw, 50vw"
+    src='bg.png'
+    alt="back" >
+    
+<picture>
+    <source media="(min-width:600px)" srcset="im10.jpg">
+    <source media="(max-width:601px)" srcset="im1.jpg">
+    <img src="bg.png" alt="back image">
+</picture>
+</body>
+</html>
