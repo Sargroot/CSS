@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLAMP</title>
+<style>
+    .box{
+        border: 5px solid greenyellow;
+        height:150px;
+        width: clamp(150px,50vw,600px);
+    }
+    .ft{
+        font-size: clamp(1rem,4vw,3rem);
+    }
+</style>
+</head>
+<body>
+    <h1>USING CLAMP</h1>
+    <div class="box">
+        <p class="ft">hello this  is a box</p>
+    </div>
+</body>
+</html>
