@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM naming</title>
+<style>
+    .card{
+        margin: 15px;
+        padding: 10px;
+        border: 5px dotted violet;
+    }
+    .card__area{
+        margin: 5px;
+        padding: 5px;
+        border-radius: 12px ;
+    }
+    .card__button{
+        border-radius: 12px ;
+        background-color: green;
+        color: white;
+        
+    }
+    .card__button--disabled{
+        background-color: red;
+        cursor: not-allowed;
+        color: white;
+
+    }
+    .card__button--primary{
+        background-color: yellow;
+        color: black;
+        cursor: crosshair;
+    }
+    .card__button--secondary{
+        background-color:aqua;
+        color: black;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+        <textarea class="card__area" rows="15" cols="25"></textarea><br>
+        <button class="card__button">SEND</button>
+        <button class="card__button card__button--disabled">SEND</button>
+        <button class="card__button card__button--primary">SEND</button>
+        <button class="card__button card__button--secondary">SEND</button>
+    </div>
+</body>
+</html>
